@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+  <!-- ===== ===== CSS ===== ===== -->
+
+  <link rel='stylesheet' href='Assets/Css/style.css'>
+
+  <!-- ===== ===== JavaScript ===== ===== -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js'></script>
+
+  <title>Roux Studios</title>
+
+</head>
+
+<body>
+
+  <main class='container'>
+
+    <header class='header'>
+
+      <div class='header__logo'>✸</div>
+
+      <div class='header__menu-1'>
+
+        <li>Start page</li>
+        <li>Portfolio</li>
+        <li>Collections</li>
+        <li>Blog</li>
+
+      </div>
+
+      <div class='header__menu-2'>
+
+        <li>About us</li>
+        <li>Dashboard</li>
+        <li>Shop</li>
+        <li>Contact</li>
+
+      </div>
+
+      <div class='header__hamburger'>
+
+        <span></span>
+        <span></span>
+
+      </div>
+
+    </header>
+  
+    <section class='wrapper'>
+
+      <div class='main__title'>
+
+        <div class='title__logo'><img src='Assets/Component/Base/logo.png' alt='Logo' /></div>
+
+        <div class='title'> Placewalk </div>
+
+      </div>
+
+      <div class='divider'></div>
+
+      <div class='hero__image'>
+
+        <div class='hero__title'>
+
+          <div>X</div>
+          <div>3</div>
+          <div>A</div>
+          <div>G</div>
+          <div class='arrow__img'><img src='Assets/Component/Base/arrow.png' alt='Arrow' /></div>
+          <div>2</div>
+
+        </div>
+
+        <div class='hero__copy'>
+
+          <div class='copy__left'>
+
+            <div class='btns'>
+
+              <div class='btn'>Portfolio Product</div>
+              <div class='btn'>Building</div>
+
+            </div>
+
+            <div class='copy'> Travel in discovering interesting. Architectural sites in the city <br /> Get inspired and learn about descriptions in places. </div>
+
+          </div>
+
+          <div class='copy__right'>
+
+            <div class='copy'> A place of interesting places and photographic interesting shots <br /> Be a short interview in our design studio </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script>
+
+    gsap.from( '.header > div, .main__title > div, .divider, .hero__image, .hero__title > div, .btns> div, .hero__copy > div', 2, { y: '200', opacity: 0, ease: Expo.easeInOut, delay: 1, stagger: 0.08, } );
+
+    gsap.from('.arrow__img img', 1, { scale: 0, ease: Elastic.easeOut, delay: 4, } );
+
+  </script>
+  
+</body>
+
+</html>
